@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'BanderaPro';
+  src: url('./fonts/BanderaPro.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BanderaPro';
+  src: url('./fonts/BanderaPro-Bold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./fonts/OpenSans-cyrillic.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./fonts/OpenSansBold-cyrillic.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.button {
+  font: bold 15px/1 'OpenSans';
+  text-transform: uppercase;
+  color: #030303;
+  padding: 22px 35px 20px;
+  background: #ffb709;
+  border: 1px solid #ffb709;
+  border-radius: 5px;
+}
+
+.vacancy {
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.vacancy__header {
+  background: url(img/vacancy-bottom.jpg) no-repeat 0 100%;
+  width: 1190px;
+  padding: 145px 0 110px;
+  margin: 0 auto;
+}
+
+.vacancy__title {
+  color: #0a0a0a;
+  font: bold 60px/1 'BanderaPro';
+  margin: 0 0 21px;
+  letter-spacing: 2px;
+}
+
+.vacancy__text {
+  color: #000;
+  font: 16px/24px 'OpenSans';
+  margin: 0;
+}
+
+.vacancy__list-wrapper {
+  padding: 20px 0 160px;
+}
+
+.vacancy__list {
+  margin: 0 0 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.vacancy__item {
+  margin: 13px 0;
+}
+
+.vacancy__item-text {
+  color: #333;
+  font: bold 24px/1.5 'OpenSans';
+  border-bottom: 2px dashed #333;
+}
