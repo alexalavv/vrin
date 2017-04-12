@@ -51,6 +51,7 @@ function load() {
   var top = document.querySelector('.paralax-top');
   var paralax = document.querySelector('.paralax');
   var elems = document.querySelectorAll('.vacancy__item-wrapper');
+  var button = document.querySelectorAll('.button');
 
   window.addEventListener('scroll', scroll.bind({}, top.firstElementChild));
   window.addEventListener('scroll', scroll.bind({}, paralax));
@@ -59,11 +60,32 @@ function load() {
     elems[i].addEventListener('click', toggler);
   }
 
+  for (var i = 0, l = button.length; i < l; i++) {
+    button[i].addEventListener('click', popup);
+  }
+
+  document.querySelector('.close').addEventListener('click', popup);
+
   var prev = throttle(clickSlidePrev, 700);
   var next = throttle(clickSlideNext, 700);
 
   document.querySelector('.slider__arrow--right').addEventListener('click', next);
   document.querySelector('.slider__arrow--left').addEventListener('click', prev);
+}
+
+function popup() {
+  var popup = document.querySelector('.popup');
+
+  if (popup.classList.contains('open')) {
+    popup.classList.remove('open')
+  } else {
+    var iframe = document.querySelector('iframe');
+    var close = document.querySelector('.close');
+
+    popup.classList.add('open');
+    close.style.left = iframe.getBoundingClientRect().right - 16 - 16 - 20 + 'px';
+    close.style.top = iframe.getBoundingClientRect().top + 16 + 'px';
+  }
 }
 
 function throttle(func, ms) {
