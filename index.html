@@ -1,45 +1,278 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name=viewport content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta charset="utf-8">
-    <title>title</title>
-    <link href="first-view.css" rel="stylesheet">
+    <title>АБАК-ПРЕСС</title>
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="header__banner paralax-top">
+        <div class="paralax__body"></div>
+      </div>
+      <div class="header__nav">
+        <span class="header__logo"></span>
+        <span class="header__logo"></span>
+        <span class="header__logo"></span>
+        <span class="header__logo"></span>
+        <span class="header__logo"></span>
+      </div>
+      <div class="header__arrow">на крутые и сложные проекты</div>
+    </header>
     <article>
-      <section class="vacancy">
+      <section class="vacancy paralax">
         <section class="vacancy__header">
           <p class="vacancy__title">Наши вакансии</p>
           <p class="vacancy__text">
-            В поддержке и постоянной разработке находятся два крупных</br>
-            федеральных проекта и два поменьше. Высокая нагрузка, миллионы посетителей в месяц,</br>
-            передовые технологии. Большое количество амбиций и хотелок — море работы.</br>
-            Нас уже больше сорока человек, но интересных задач гораздо больше, чем нас.
+            Командный дух, отсутствие строгих регламентов и дресс-кода, уютный офис</br>
+            в центре, стабильная и белая зарплата, руководство, которое не сидит над душой,</br>
+            но всегда рядом, если необходимо - это мы. Если ты заядлый сноубордист, любитель</br>
+            походов-сплавов, или у тебя есть другое сумасшедшее хобби, будь уверен – среди</br>
+            нас найдутся товарищи-экстремалы. Неважно, где ты сейчас живешь, если</br>
+            понравимся друг другу – мы поможем с переездом в Екатеринбург.
           </p>
         </section>
         <section class="vacancy__list-wrapper ">
           <ul class="vacancy__list">
             <li class="vacancy__item">
-              <span class="vacancy__item-text">Разработчик php/python/ruby</span>
+              <div class="vacancy__item-wrapper">
+                <span class="vacancy__item-text">Frontend - разработчик</span>
+                <div class="vacancy__item-body">
+                  <p class="vacancy__item-title">Кого мы ищем:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">С опытом работы frontend - разработчиком (js / jQuery / AngularJS / React и/или другой framework/библиотека) - от 1 года</li>
+                    <li class="slider__text-row">Отличное знание HTML и CSS</li>
+                    <li class="slider__text-row">С пониманием жизненного цикла приложения</li>
+                    <li class="slider__text-row">С опытом использования систем контроля версий (GIT и подобное)</li>
+                    <li class="slider__text-row">ООП на уровне понимания стандартных паттернов</li>
+                  </ul>
+                  <p class="vacancy__item-title">Будет плюсом:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">Умеете верстать с использованием последних технологий (SASS, PostCSS, Webpack, BEM и пр.)</li>
+                    <li class="slider__text-row">Отлично понимаете и можете обосновать применение различных паттернов проектирования</li>
+                    <li class="slider__text-row">Есть опыт работы с ES6, Babel, Node.js</li>
+                    <li class="slider__text-row">Есть опыт написания unit - тестов</li>
+                  </ul>
+                  <p class="vacancy__item-title">Условия работы:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">Гуманный график (утро начинается с 8-11), официальное трудоустройство</li>
+                    <li class="slider__text-row">Заработная плата по итогам собеседования, ориентируемся на ожидания кандидатов</li>
+                    <li class="slider__text-row">Сильная команда</li>
+                    <li class="slider__text-row">Просторный и уютный офис в центре города с зонами релакса, кухней (фрукты, орехи, булки, чай, кофе прилагаются)</li>
+                    <li class="slider__text-row">Свобода выбора компьютерной техники</li>
+                  </ul>
+                   <button class="button">Отправить резюме</button>
+                </div>
+              </div>
             </li>
             <li class="vacancy__item">
-              <span class="vacancy__item-text">Front-end разработчик</span>
+              <div class="vacancy__item-wrapper">
+                <span class="vacancy__item-text">Backend - разработчик на Ruby on Rails</span>
+                                <div class="vacancy__item-body">
+                  <p class="vacancy__item-title">Кого мы ищем:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">имеет опыт разработки на RoR или готов переучиться с других платформ</li>
+                    <li class="slider__text-row">имеет опыт в проектировании и разработке сложных систем</li>
+                    <li class="slider__text-row">умеет быстро разбираться в чужом коде, если понадобится</li>
+                  </ul>
+                  <p class="vacancy__item-title">Мы используем:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">highload, Postgres, Redis, Sphinx, Docker</li>
+                  </ul>
+                  <p class="vacancy__item-title">Условия работы:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">высокая культура разработки</li>
+                    <li class="slider__text-row">понимающие руководство, интересные задачи, три федеральных интернет-портала (pulscen.ru, blizko.ru, yapokupayu.ru)</li>
+                    <li class="slider__text-row">комфортный офис в центре, мощное железо, печеньки</li>
+                    <li class="slider__text-row">высокий уровень дохода, гибкий график</li>
+                  </ul>
+                   <button class="button">Отправить резюме</button>
+                </div>
+              </div>
             </li>
             <li class="vacancy__item">
-              <span class="vacancy__item-text">C# разработчик</span>
+              <div class="vacancy__item-wrapper">
+                <span class="vacancy__item-text">Менеджер разработки</span>
+                <div class="vacancy__item-body">
+                  <p class="vacancy__item-title">Обязанности:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">Руководство проектной командой (разработчики, верстальщики, тестировщики),распределение задач.</li>
+                    <li class="slider__text-row">Аналитика выпускаемых решений на всех этапах (от снятия задачи до эксплуатации) в разрезе особенностей архитектуры проектов.</li>
+                    <li class="slider__text-row">Взаимодействие с заказчиками, превращение требований в технические задания.</li>
+                    <li class="slider__text-row">Контроль сроков и качества выполнения задач.</li>
+                  </ul>
+                  <p class="vacancy__item-title">Требования:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">Опыт руководства проектной командой от 2-х лет.</li>
+                    <li class="slider__text-row">Опыт расшифровки, упрощения требований, опыт дробления задач.</li>
+                    <li class="slider__text-row">Желателен опыт работы с highload-системами.</li>
+                    <li class="slider__text-row">Желателен опыт программирования.</li>
+                  </ul>
+                  <p class="vacancy__item-title">Условия:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">Заработная плата: оклад + премии за задачи. Итоговый уровень дохода обсуждается индивидуально.</li>
+                    <li class="slider__text-row">Сложные задачи, высокий уровень it-разработок, сильная команда, постоянное развитие.</li>
+                    <li class="slider__text-row">Гибкий график, офис в центре.</li>
+                  </ul>
+                  <button class="button">Отправить резюме</button>
+                </div>
+              </div>
             </li>
             <li class="vacancy__item">
-              <span class="vacancy__item-text">Менеджер проекта</span>
-            </li>
-            <li class="vacancy__item">
-              <span class="vacancy__item-text">Специалист по тестированию</span>
+              <div class="vacancy__item-wrapper">
+                <span class="vacancy__item-text">Тестировщик</span>
+                <div class="vacancy__item-body">
+                  <p class="vacancy__item-title">Стартовые требования:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">высшее техническое образование.</li>
+                    <li class="slider__text-row">знание Windows/Linux на уровне опытного пользователя.</li>
+                    <li class="slider__text-row">знание сетевых технологий</li>
+                    <li class="slider__text-row">базовые знания SQL</li>
+                    <li class="slider__text-row">аккуратность, внимательность, ответственность, логическое мышление.</li>
+                  </ul>
+                  <p class="vacancy__item-title">Будет плюсом:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">опыт тестирования веб-приложений</li>
+                    <li class="slider__text-row">знание и понимание основных типов уязвимостей web сервисов</li>
+                    <li class="slider__text-row">владение одним из скриптовых языков (Ruby | PHP | Python)</li>
+                    <li class="slider__text-row">опыт работы с системами автоматизированного тестирования.</li>
+                    <li class="slider__text-row">опыт разработки ПО.</li>
+                    <li class="slider__text-row">опыт разработки тестовой документации (чек-листы, тестовые сценарии, отчеты по тестированию).</li>
+                    <li class="slider__text-row">опыт работы с системами контроля версий (Git), системами виртуализации.</li>
+                    <li class="slider__text-row">знание техник тест-дизайна.</li>
+                    <li class="slider__text-row">владение английским языком (чтение технической литературы).</li>
+                  </ul>
+                  <p class="vacancy__item-title">Что предстоит делать?</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">тестировать веб приложения. От функционального и нагрузочного, до регрессионного и модульного тестирования.</li>
+                    <li class="slider__text-row">выявлять проблемы в работе приложения и локализовывать их.</li>
+                    <li class="slider__text-row">регистрировать найденные дефекты.</li>
+                    <li class="slider__text-row">поддерживать существующие и писать новые функциональные автотесты (используем технологии Ruby+SeleniumWebdriver+Rspec).</li>
+                  </ul>
+                  <p class="vacancy__item-title">Мы предлагаем:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">много интересных и разноплановых задач</li>
+                    <li class="slider__text-row">работу в команде профессионалов</li>
+                    <li class="slider__text-row">обучение, поездки на профильные конференции за счет компании</li>
+                    <li class="slider__text-row">отличную атмосферу</li>
+                  </ul>
+                  <p class="vacancy__item-title">Условия работы:</p>
+                  <ul class="slider__text">
+                    <li class="slider__text-row">комфортный офис в центре Екатеринбурга</li>
+                    <li class="slider__text-row">гибкий рабочий график</li>
+                    <li class="slider__text-row">достойная заработная плата (обсуждается индивидуально, рассматриваем ожидания кандидатов)</li>
+                    <li class="slider__text-row">плюшки, кофе и другие бонусы.</li>
+                  </ul>
+                  <button class="button">Отправить резюме</button>
+                </div>
+              </div>
             </li>
           </ul>
           <button class="button">Присоединяйся!</button>
         </section>
       </section>
+      <section class="block block--first">
+        <p class="block__title">Немного</br>о нас</p>
+        <hr class="block__hr">
+        <p class="block__text">
+          ООО «АБАК-ПРЕСС» был основан в 1992 году. Сегодня это динамично</br>
+          развивающийся холдинг, в рамках которого работают 4 интернет-портала и 4 сетевых</br>
+          печатных проекта.</br>
+          В настоящее время в ООО «АБАК-ПРЕСС» работает более 1200 сотрудников. Ты</br>
+          хочешь решать по-настоящему сложные задачи? Ты любишь Agile? Ты хочешь, чтобы</br>
+          результат твоей работы влиял на миллионы пользователей? Тогда работа</br>
+          в «АБАК-ПРЕСС» для тебя!
+        </p>
+        <div class="block__abbak-logo"></div>
+      </section>
+      <section class="block">
+        <p class="block__title">Чем мы</br>занимаемся?</p>
+        <hr class="block__hr">
+        <p class="block__text">
+          В поддержке и постоянной разработке находятся четыре крупных федеральных</br>
+          интернет-портала. Высокая нагрузка, 17 млн посетителей в месяц, передовые</br>
+          технологии. Большое количество амбиций и хотелок — море работы.</br>
+          Нас уже больше ста человек, но интересных задач гораздо больше, чем нас.
+        </p>
+        <section class="slider">
+          <hr class="block__hr--long">
+          <div class="slider__list">
+            <div class="slider__item">
+              <p class="slider__title">
+                <span>Портал Пульс Цен</span>
+                <a class="slider__title-img" href=""></a>
+              </p>
+              <ul class="slider__text">
+                <li class="slider__text-row">9 млн посетителей в месяц</li>
+                <li class="slider__text-row">1 млн компаний</li>
+                <li class="slider__text-row">6 млн товаров и услуг</li>
+                <li class="slider__text-row">мобильное приложение на ios и android</li>
+              </ul>
+              <a class="slider__link" href="http://www.pulscen.ru" target="_blank">http://www.pulscen.ru/</a>
+            </div>
+          </div>
+          <div class="slider__img">
+            <div class="slider__screen-wrapper">
+              <div class="slider__screen"></div>
+            </div>
+          </div>
+          <div class="slider__nav">
+            <div class="slider__arrow slider__arrow--left"></div>
+            <div class="slider__arrow slider__arrow--right"></div>
+          </div>
+        </section>
+      </section>
+      <section class="block block--life">
+        <div class="block__left">
+          <p class="block__title">Как мы</br>живём?</p>
+          <hr class="block__hr">
+          <p class="block__text">
+            Мы живём по аджайлу — это удобно,</br>
+            интересно и очень здорово.</br>
+            Постоянное развитие, участие</br>
+            в профессиональных конференциях,</br>
+            командообразование, творческие</br>
+            вечера, участие в выставках,</br>
+            конкурсах, соревнованиях,</br>
+            выезды на природу, ориентация</br>
+            на результат, лидерство</br>
+            и наставничество.
+          </p>
+        </div>
+        <div class="block__right-wrapper">
+          <div class="block__right">
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+            <div class="block__img"></div>
+          </div>
+        </div>
+      </section>
+      <section class="block block--last">
+        <p class="block__title">Что мы</br>используем</p>
+        <hr class="block__hr">
+        <p class="block__text">
+          Современные технологии, мощное железо, 20-летний опыт работы</br>
+          с высоконагруженными системами. Стек технологий: RubyRails, SQL (PostgreSQL/MySQL).</br>
+          Git, Redis, Sphinx, , Docker, JavaScript, JQuery, HTML5, AngularJS, React,  Node.js, SASS,</br>
+          PostCSS, Webpack и многое другое
+        </p>
+        <div class="tools-img"></div>
+      </section>
     </article>
-    <footer></footer>
+    <footer class="footer">
+      <p class="footer__text">© 2017 Медиахолдинг «АБАК-ПРЕСС»</p>
+    </footer>
+
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
